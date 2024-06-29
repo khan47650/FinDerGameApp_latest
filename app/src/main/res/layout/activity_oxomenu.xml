@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityOXOMenu"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/ivArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_arrow"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/parent"
+        android:background="@color/lightgrey"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvoxo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="OXO"
+            android:textColor="@color/purple2"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/ivOxo"
+            android:layout_below="@id/tvoxo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_game2" />
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_below="@id/ivOxo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_outer_layout">
+            <RelativeLayout
+                android:id="@+id/players"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inner_layout"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:id="@+id/player1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_person" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_italic"
+                        android:text="player"
+                        android:textSize="14sp"
+                        android:layout_margin="2dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <TextView
+                    style="@style/tvoxo"
+                    android:text="VS"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true">
+                    <ImageView
+                        android:id="@+id/player2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_person" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_italic"
+                        android:text="player"
+                        android:textSize="14sp"
+                        android:layout_margin="2dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_below="@id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_outer_layout">
+            <RelativeLayout
+                android:id="@+id/playervsCom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inner_layout"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:id="@+id/player"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_person" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_italic"
+                        android:text="player"
+                        android:textSize="14sp"
+                        android:layout_margin="2dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <TextView
+                    style="@style/tvoxo"
+                    android:text="VS"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true">
+                    <ImageView
+                        android:id="@+id/computer"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_computer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_italic"
+                        android:text="Computer"
+                        android:textSize="14sp"
+                        android:layout_margin="2dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

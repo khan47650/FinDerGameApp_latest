@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:background="@drawable/bg_outer_layout">
+            <RelativeLayout
+                android:id="@+id/oxoGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inner_layout"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/tvgames"
+                    android:text="OXO"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_game" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_below="@id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_outer_layout">
+            <RelativeLayout
+                android:id="@+id/smacking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inner_layout"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/tvgames"
+                    android:text="SMACKING"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_smack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_below="@id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_outer_layout">
+            <RelativeLayout
+                android:id="@+id/colors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inner_layout"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/tvgames"
+                    android:text="FIND COLORS"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_colors"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

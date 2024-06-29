@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="stroke_width">50dp</dimen>
+    <dimen name="stroke_width_record">10dp</dimen>
+
+</resources>

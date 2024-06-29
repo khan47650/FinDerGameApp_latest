@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinDerGameApp"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".ColorLevelActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".whack_the_mole.Whack_Game_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityColorsChart"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAddQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPlayerVsComputer"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityColors_1"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActivityOXOPlay"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySignUp"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOXOMenu"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityVerification"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHome"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

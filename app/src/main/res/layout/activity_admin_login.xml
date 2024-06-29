@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAdminLogin"
+    android:background="@color/white"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ivImage"
+        android:src="@drawable/ic_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/ivImage"
+        android:background="@drawable/bg_login_layout"
+        android:elevation="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/heading"
+            android:text="Login" />
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/edtTxt"
+            android:layout_below="@id/tvLogin"
+            android:drawableStart="@drawable/ic_user_name"
+            android:hint="User Name" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/edtTxt"
+            android:layout_below="@id/edtName"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password" />
+
+
+        <RelativeLayout
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edtPassword"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_key" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

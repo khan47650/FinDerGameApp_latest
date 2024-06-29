@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "294336911131",
+    "firebase_url": "https://finder-dd01b-default-rtdb.firebaseio.com",
+    "project_id": "finder-dd01b",
+    "storage_bucket": "finder-dd01b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294336911131:android:a58dccd5c7125a3e08a5be",
+        "android_client_info": {
+          "package_name": "com.example.findergamesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgCXTvdKsonlEVZVJmfH-YeNMbmZ-sO3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

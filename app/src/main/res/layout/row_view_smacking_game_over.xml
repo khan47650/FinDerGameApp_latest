@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:background="@drawable/bg_game_over"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/gameover"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_game_over"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/tvplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:text="Do you wanna play again?"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_below="@id/gameover"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_btndelete"
+                android:text="Play" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQuit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="14sp"
+                android:layout_marginStart="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btncancel"
+                android:text="Quit" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
