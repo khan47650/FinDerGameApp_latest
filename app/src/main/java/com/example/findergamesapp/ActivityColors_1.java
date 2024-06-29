@@ -279,6 +279,13 @@ public class ActivityColors_1 extends AppCompatActivity {
         if (!isActivityRunning) {
             return;
         }
+
+
+        // Cancel the timer
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
         Dialog finishedDialog = new Dialog(this);
         finishedDialog.setContentView(R.layout.row_view_smacking_game_over);
 
@@ -304,7 +311,7 @@ public class ActivityColors_1 extends AppCompatActivity {
     }
 
     private void startTimer() {
-        long timerDuration=7000;
+        long timerDuration=8000;
 
         countDownTimer = new CountDownTimer(timerDuration, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -314,7 +321,9 @@ public class ActivityColors_1 extends AppCompatActivity {
 
             public void onFinish() {
                 binding.tvCount.setText("00");
-                gameFinishedDialog("Time's up! Game over.");
+                if (isActivityRunning) {
+                    gameFinishedDialog("Time's up! Game over.");
+                }
             }
         }.start();
     }
